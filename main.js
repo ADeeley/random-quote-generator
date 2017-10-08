@@ -17,5 +17,14 @@ function newQuote() {
     }
 }
 
+// Tweet -----------------------------------------------------
+
+var tweetLink = "http://twitter.com/home?status=";
+function tweetQuote() {
+    tweetLink += quotes[authors[count]];
+    tweetLink += " " + authors[count];
+    console.log(tweetLink);
+    window.open(tweetLink, '_blank');
+}
 
 // Event listener
